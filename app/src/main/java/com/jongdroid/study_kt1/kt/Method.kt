@@ -23,8 +23,12 @@ fun plus(first: Int, second: Int): Int {
 }
 
 
+
+
+
+
 fun main(array: Array<String>) {
-    // 함수를 호출 하는 방법
+    // 함수를 호출 하는 방
     // 인자를 넣는다.
     // plus(5,10) // 5와 10이 전달  first = 5 , second = 10
     // 이걸 출력하려면?
