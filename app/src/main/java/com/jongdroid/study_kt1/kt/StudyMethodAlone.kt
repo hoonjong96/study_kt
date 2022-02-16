@@ -31,20 +31,23 @@ fun printMethod() {
 
 }
 
-fun plusMethod(english: Int, math: Int, social: Int):Int {
+fun plusMethod(english: Int, math: Int, social: Int): Int {
     var myScore = english + math + social
     myScore = myScore / 3
     return myScore
 }
+
+fun simpleMethod(num1: Int, num2: Int) = num1 + num2
+
+
 
 fun main(array: Array<String>) {
 
     var getMyscore = plusMethod(90, 90, 90)
     println(getMyscore)
 
-
-
-
+    val myresult = simpleMethod(3,5)
+    println(myresult)
 //    printMethod()
 
 

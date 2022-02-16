@@ -16,8 +16,19 @@ fun printAdd(num1: Int, num2: Int) {
     println(result)
 }
 
+
 // 3. 간단하게 함수를 만들기
+// 2개의 인자를 받을 수 있다.
 fun plusShort(num1: Int, num2: Int) = num1 + num2
+
+// 4. 가변인자를 갖는 함수 선언하는 방법
+// vararg = 베리어블 아규먼
+// vararg 를 적게 되면 1개부터 n개 까지 인수를 받을 수 있다.
+fun printMany(vararg numbers: String) {
+    for (number in numbers) {
+        println(numbers)
+    }
+}
 
 
 fun main(array: Array<String>) {
@@ -27,11 +38,18 @@ fun main(array: Array<String>) {
     var result = add(10)
     println(result)
 
+    var result1 = add(num2 = 100, num1 = 300)
+    println(result1)
+
     //100 + 200 결과 값이 출력됨 왜냐하면 해당 함수에서 num1 + num2 후 결과 값을 프린트 찍었음
     printAdd(100, 200)
 
 
     var result2 = plusShort(1000, 1000)
     println(result2)
+
+    println()
+    printMany("바", "보")
+    printMany("코틀린")
 
 }
