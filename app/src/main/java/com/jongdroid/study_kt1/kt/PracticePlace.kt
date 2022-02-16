@@ -10,13 +10,13 @@ fun myMethod(num1: Int, num2: Int):Int  {
 }
 
 
-fun edd (math: Int, korean: Int, english: Int): Int {
+fun edd(math: Int, korean: Int, english: Int): Int {
     var myScore = math + korean + english
     myScore = myScore / 3
     return myScore
 }
 
-fun foodList (food1: String, food2: String, food3: String): String {
+fun foodList(food1: String, food2: String, food3: String): String {
     println(food1)
     return food1
 
