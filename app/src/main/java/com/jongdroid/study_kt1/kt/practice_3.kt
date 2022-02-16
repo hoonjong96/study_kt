@@ -2,6 +2,7 @@ package com.jongdroid.study_kt1.kt
 
 
 
+
 var numbering = 1 + 2 + 3 + 4 + 5
 var setString = "1"
 var chString = setString.toInt()
