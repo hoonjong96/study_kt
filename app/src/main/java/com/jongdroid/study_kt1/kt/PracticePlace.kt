@@ -22,6 +22,7 @@ fun foodList(food1: String, food2: String, food3: String): String {
 
 }
 
+fun myList(num1:Int, num2:Int) = num1 + num2
 
 fun printMethod() {
     println("저는 그냥 출력만 할거에요1")
