@@ -9,6 +9,13 @@ fun myMethod(num1: Int, num2: Int):Int  {
 
 }
 
+fun wakeupMethod(time: Int) :Int {
+    var time = 5
+    return time
+
+}
+
+
 
 fun edd(math: Int, korean: Int, english: Int): Int {
     var myScore = math + korean + english
@@ -43,11 +50,16 @@ fun simpleMethod(num1: Int, num2: Int) = num1 + num2
 
 fun main(array: Array<String>) {
 
-    var getMyscore = plusMethod(90, 90, 90)
-    println(getMyscore)
+    var getTime = wakeupMethod(5)
+    println("저는 이제 $getTime 시에 일어날거에요" )
 
-    val myresult = simpleMethod(3,5)
-    println(myresult)
+
+
+//    var getMyscore = plusMethod(90, 90, 90)
+//    println(getMyscore)
+//
+//    val myresult = simpleMethod(3,5)
+//    println(myresult)
 //    printMethod()
 
 
