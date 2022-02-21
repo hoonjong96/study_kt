@@ -52,52 +52,56 @@ fun printFun(): Unit {
     println("안녕하세요. printMethod 입니다.")
 }
 
+fun testIf(a: Int, b: Int): Int {
+    if (a > b) {
+        return a
+
+    } else {
+        return b
+    }
+}
+
+fun testMethod(a: Int, b: Int) = if (a > b) a else b
+
+fun getStringLength(obj: Any): Int? {
+    if (obj is String) {
+        return obj.length
+    }
+    return null
+}
+
+
+fun describe(obj: Any): String =
+    when (obj) {
+        1 -> "One"
+        "Hello" -> "안녕"
+        is Long -> "Long"
+        else -> "찾을 수 없어요."
+    }
 
 
 fun main(array: Array<String>) {
+
+    // number가 1..10 안에 존재하는지 확인
+//    val number = 3
+//    if (number in 1..10) {
+//        println("$number 은 존재해요.")
+//    }
+
+    for (x in 1..5) {
+        println(x)
+    }
+
+//    println(testIf(5, 6))
 
 
     // 문자열 보간법 example
     // $ 키워드를 사용했어요.
     val myAge = 20
-    println("저의 나이는 ${myAge}살 입니다.")
+//    println("저의 나이는 ${myAge}살 입니다.")
+
+    var myValue: String? = "안녕"
+    myValue = null
 
 
-
-
-//    var getTime = wakeupMethod(5)
-//    println("저는 이제 $getTime 시에 일어날거에요" )
-//
-//
-//    mySumMethod(5,4)
-//
-//    printFun()
-
-//    var getMyscore = plusMethod(90, 90, 90)
-//    println(getMyscore)
-//
-//    val myresult = simpleMethod(3,5)
-//    println(myresult)
-//    printMethod()
-
-
-
-
-
-
-
-
-
-
-
-//    var result : Int = edd(english = 90, math = 100, korean = 85)
-//    println(result)
-//
-//    /////////////////////////////////////////
-//
-//    foodList("고기", "과자", "상어")
-//
-//
-//    var getMethod = myMethod(num2 = 200, num1 = 2)
-//    println(getMethod)
 }
