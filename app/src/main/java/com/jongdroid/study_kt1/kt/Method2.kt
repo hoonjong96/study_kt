@@ -21,6 +21,7 @@ fun printAdd(num1: Int, num2: Int) {
 // 2개의 인자를 받을 수 있다.
 fun plusShort(num1: Int, num2: Int) = num1 + num2
 
+
 // 4. 가변인자를 갖는 함수 선언하는 방법
 // vararg = 베리어블 아규먼
 // vararg 를 적게 되면 1개부터 n개 까지 인수를 받을 수 있다.

@@ -46,14 +46,32 @@ fun plusMethod(english: Int, math: Int, social: Int): Int {
 
 fun simpleMethod(num1: Int, num2: Int) = num1 + num2
 
+fun mySumMethod(num1: Int, num2: Int) = num1 + num2
+
+fun printFun(): Unit {
+    println("안녕하세요. printMethod 입니다.")
+}
+
 
 
 fun main(array: Array<String>) {
 
-    var getTime = wakeupMethod(5)
-    println("저는 이제 $getTime 시에 일어날거에요" )
+
+    // 문자열 보간법 example
+    // $ 키워드를 사용했어요.
+    val myAge = 20
+    println("저의 나이는 ${myAge}살 입니다.")
 
 
+
+
+//    var getTime = wakeupMethod(5)
+//    println("저는 이제 $getTime 시에 일어날거에요" )
+//
+//
+//    mySumMethod(5,4)
+//
+//    printFun()
 
 //    var getMyscore = plusMethod(90, 90, 90)
 //    println(getMyscore)
